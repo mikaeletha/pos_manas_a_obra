@@ -1,0 +1,10 @@
+.card-servico {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border-top: 4px solid var(--primary-color) !important;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(67, 37, 129, 0.15) !important;
+}
