@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manas à Obra | Contato e Orçamento</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS Próprio -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar gerada via JS -->
+    <header id="header-navbar"></header>
+
+    <!-- CONTEÚDO DA PÁGINA DE CONTATO -->
+    <main class="py-5">
+        <div class="container">
+            <!-- Título da Seção -->
+            <div class="text-center mb-5">
+                <span class="badge bg-highlight mb-2">Orçamento Rápido</span>
+                <h1 class="display-5 fw-bold text-dark-purple">Solicite pelo WhatsApp</h1>
+                <p class="text-secondary col-lg-6 mx-auto">
+                    Preencha os dados abaixo com o que você precisa. Ao clicar em enviar, vamos abrir o seu WhatsApp com
+                    a mensagem prontinha para nossa equipe!
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="p-4 p-md-5 rounded-4 shadow-sm bg-white border-purple-light">
+
+                        <form id="whatsapp-form" novalidate>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label text-dark-purple fw-medium">Seu Nome</label>
+                                <input type="text" class="form-control rounded-3 py-2" id="nome"
+                                    placeholder="Digite seu nome completo" required>
+                                <div class="invalid-feedback">Por favor, informe seu nome.</div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="telefone" class="form-label text-dark-purple fw-medium">Seu WhatsApp /
+                                        Telefone</label>
+                                    <input type="tel" class="form-control rounded-3 py-2" id="telefone"
+                                        placeholder="(31) 98888-8888" required>
+                                    <div class="invalid-feedback">Por favor, informe seu WhatsApp.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="servico" class="form-label text-dark-purple fw-medium">Serviço de
+                                        Interesse</label>
+                                    <select class="form-select rounded-3 py-2" id="servico" required>
+                                        <option value="" selected disabled>Selecione uma opção...</option>
+                                        <option value="Pequenos Reparos (Elétrica/Hidráulica)">Pequenos Reparos
+                                            (Elétrica/Hidráulica)</option>
+                                        <option value="Pintura Residencial">Pintura Residencial</option>
+                                        <option value="Instalações e Montagem">Instalações e Montagem</option>
+                                        <option value="Outros Serviços">Outros Serviços</option>
+                                    </select>
+                                    <div class="invalid-feedback">Por favor, selecione o serviço.</div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="detalhes" class="form-label text-dark-purple fw-medium">Detalhes do que você
+                                    precisa</label>
+                                <textarea class="form-control rounded-3" id="detalhes" rows="4"
+                                    placeholder="Ex: Preciso trocar duas torneiras e instalar um suporte de TV na sala..."
+                                    required></textarea>
+                                <div class="invalid-feedback">Por favor, descreva brevemente o serviço.</div>
+                            </div>
+
+                            <button type="submit"
+                                class="btn btn-success w-100 py-3 fw-semibold rounded-3 d-flex align-items-center justify-content-center gap-2">
+                                <i class="bi bi-whatsapp fs-5"></i> Enviar Orçamento via WhatsApp
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/contato.js"></script>
+</body>
+
+</html>
